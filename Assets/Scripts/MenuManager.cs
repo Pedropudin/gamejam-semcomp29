@@ -5,13 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class MenuManager : MonoBehaviour
 {
-    [SerializeField] private string level;
+    [SerializeField] private string initialLevel;
     [SerializeField] private LevelLoader levelLoader;
 
     public void Jogar()
     {
-        levelLoader.LoadLevel(level);
-        Debug.Log("AAAAAAAa");
+        levelLoader.LoadLevel(initialLevel);
     }
 
     public void Sair()

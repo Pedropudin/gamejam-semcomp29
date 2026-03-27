@@ -533,7 +533,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11b056699601ad447ae8613e58828c67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  level: SalaDeEstar
+  initialLevel: SalaDeEstar
   levelLoader: {fileID: 342679332}
 --- !u!4 &634004073
 Transform:
