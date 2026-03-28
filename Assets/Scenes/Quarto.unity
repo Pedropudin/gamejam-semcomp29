@@ -631,6 +631,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1279202779768947299, guid: 00e11f2cff30c6d44a2955bbf5a26c70, type: 3}
+      propertyPath: activateSound
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1279202779768947299, guid: 00e11f2cff30c6d44a2955bbf5a26c70, type: 3}
       propertyPath: transitionTime
       value: 0.5
       objectReference: {fileID: 0}
