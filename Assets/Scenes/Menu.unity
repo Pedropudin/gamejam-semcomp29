@@ -535,6 +535,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   initialLevel: SalaDeEstar
   levelLoader: {fileID: 342679332}
+  inventoryController: {fileID: 1019668442}
 --- !u!4 &634004073
 Transform:
   m_ObjectHideFlags: 0
@@ -730,6 +731,50 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1019668440
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1019668441}
+  - component: {fileID: 1019668442}
+  m_Layer: 0
+  m_Name: Inventory
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1019668441
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1019668440}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.0077865385, y: 0.053077616, z: -0.018189128}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1019668442
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1019668440}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abd48831ccea73544a42e9ac3b8ffdae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1596559260
 GameObject:
   m_ObjectHideFlags: 0
@@ -1293,3 +1338,4 @@ SceneRoots:
   - {fileID: 187755210}
   - {fileID: 739226784}
   - {fileID: 634004073}
+  - {fileID: 1019668441}

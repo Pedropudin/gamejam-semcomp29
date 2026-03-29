@@ -30,6 +30,8 @@ public class ObjectController : MonoBehaviour
         foundAnimation.SetActive(true);
         objectButton.onClick.RemoveAllListeners();
         objectButton.onClick.AddListener(OnFoundClick);
+
+        InventoryController.Instance.AddItem(objectName);
     }
 
     public void OnFoundClick()
