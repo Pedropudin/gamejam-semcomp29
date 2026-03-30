@@ -15,13 +15,20 @@ public class ObjectController : MonoBehaviour
 
     private void Start()
     {
-        objectImage.SetActive(true);
-        foundAnimation.SetActive(false);
+        if (InventoryController.Instance.HasItem(objectName))
+        {
+            objectImage.SetActive(false);
+            foundAnimation.SetActive(false);
+        } else
+        {
+            objectImage.SetActive(true);
+            foundAnimation.SetActive(false);
 
-        objectButton.onClick.AddListener(OnObjectClick);
-        foundButton.onClick.AddListener(OnFoundClick);
+            objectButton.onClick.AddListener(OnObjectClick);
+            foundButton.onClick.AddListener(OnFoundClick);
 
-        foundText.text += objectName;
+            foundText.text += objectName;
+        }
     }
 
     public void OnObjectClick()
