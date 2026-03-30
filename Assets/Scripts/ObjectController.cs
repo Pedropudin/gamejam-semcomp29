@@ -7,11 +7,13 @@ using UnityEngine.UI;
 public class ObjectController : MonoBehaviour
 {
     public string objectName;
+    public string objectDescription;
     public GameObject objectImage;
     public Button objectButton;
     public GameObject foundAnimation;
     public Button foundButton;
     public TextMeshProUGUI foundText;
+    public TextMeshProUGUI foundTextDescription;
 
     private void Start()
     {
@@ -28,6 +30,7 @@ public class ObjectController : MonoBehaviour
             foundButton.onClick.AddListener(OnFoundClick);
 
             foundText.text += objectName;
+            foundTextDescription.text = objectDescription;
         }
     }
 

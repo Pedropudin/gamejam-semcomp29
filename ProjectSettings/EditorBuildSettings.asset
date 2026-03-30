@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Banheiro.unity
     guid: ec50ae9d8128a9f4c846ba5fc05a6744
+  - enabled: 1
+    path: Assets/Scenes/Final.unity
+    guid: 6da80716296466d4e95f9d7502eadd06
   m_configObjects: {}
